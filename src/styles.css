@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.voltar{
+    text-decoration: none;
+}
+.voltar-btn{
+    width: auto;
+    background-color: #D99D2A;
+    padding-left: 10px;
+    color: white;
+}
