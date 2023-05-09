@@ -1,0 +1,42 @@
+.box{
+    text-align: center;
+    width: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+img{
+    border-radius: 20px;
+}
+button{
+    border-radius: 50px;
+    border: none;
+    padding: 2px 20px;
+    color: white;
+    transition: 0.3s;
+}
+button:hover{
+    padding: 4px 30px;
+    transition: 0.3s;
+}
+.btn-doador{
+    background-color: #CA262C;
+    position: relative;
+    z-index: 2;
+}
+.btn-ong{
+    background-color: #8fb021;
+    position: relative;
+    right: 30px;
+    padding-left: 30px;
+    transition: 0.3s;
+}
+.btn-ong:hover{
+    padding-right: 30px;
+    transition: 0.3s;
+}
+@media screen and (max-width: 480px){
+    img{
+        width: 80%;
+    }    
+
+}

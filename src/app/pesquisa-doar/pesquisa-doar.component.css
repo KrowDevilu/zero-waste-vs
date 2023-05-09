@@ -1,0 +1,49 @@
+.box{
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.filtragem{
+    background-color: #D99D2A;
+    width: 100%;
+    position: relative;
+    top: -20px;
+    border-radius: 0 0px 20px 20px;
+    padding: 0 0 10px 0px;
+}
+.filtragem h2{
+    margin-left: 10px;
+    color: white;
+}
+.filtros{
+    width: auto;
+    display: grid;
+    margin: 20px;
+}
+.filtragem .filtros select{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom:solid 2px white;
+    width: 100%;
+    color: white;
+}
+.solicitacoes{
+    display: grid;
+    margin: 0 20px;
+}
+.solicitacao{
+    border: solid 2px #CBCBCB;
+    padding: 0 20px 20px 20px;
+}
+.solicitacao p{
+    font-weight: bold;
+}
+.solicitacao p span{
+    color: #CA262C;
+}
+.solicitacao a{
+    text-decoration: none;
+    color: #8FB021;
+}
