@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TipoUsuarioComponent } from './tipo-usuario/tipo-usuario.component';
 import { PesquisaDoarComponent } from './pesquisa-doar/pesquisa-doar.component';
+import { AddAlimentoComponent } from './add-alimento/add-alimento.component';
+import { PaginaOngComponent } from './pagina-ong/pagina-ong.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TipoUsuarioComponent,
-    PesquisaDoarComponent
+    PesquisaDoarComponent,
+    AddAlimentoComponent,
+    PaginaOngComponent
   ],
   imports: [
     BrowserModule,

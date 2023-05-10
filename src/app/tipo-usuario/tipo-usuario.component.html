@@ -1,9 +1,9 @@
 <div class="box">
-    <img src="../../assets/IMAGEM.png" alt="imagem">
+    <div class="color-box"><img src="../../assets/IMAGEM.png" alt="imagem"></div>
     <h1>Olá</h1>
     <p>Por favor escolha como você deseja prosseguir.</p>
     <div class="escolha-usuario">
         <button class="btn-doador" (click)="goToPage('pesquisa');" ><h2>Quero doar</h2></button>
-        <button class="btn-ong"><h3>Sou uma ONG</h3></button>
+        <button class="btn-ong" (click)="goToPage('add-solicitacao');"><h3>Sou uma ONG</h3></button>
     </div>
 </div>

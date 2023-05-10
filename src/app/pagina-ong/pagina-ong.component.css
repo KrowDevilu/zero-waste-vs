@@ -1,0 +1,65 @@
+
+.voltar-btn{
+    background-color: #CA262C;
+    color: white;
+}
+.header{
+    background-color: #CA262C;
+    width: auto;
+    position: relative;
+    top: -25px;
+    border-radius: 0 0px 20px 20px;
+    padding: 0 0 10px 20px;
+    filter: drop-shadow(0px 5px 3px #00000049);
+}
+.header h1,.header p{
+    color: white;
+}
+.header .guide{
+    color: #CBCBCB;
+}
+.local{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.local p{
+    color: #D99D2A;
+}
+.local div{
+    border-bottom: #C6C6C6 solid 2px;
+}
+.local div h3{
+    color: #CA262C;
+}
+.local div h3 span{
+    color:black;
+}
+
+.alimentos{
+    padding: 0px 20px;
+}
+.alimentos h2{
+    text-align: center;
+    color: #D99D2A;
+}
+.alimento{
+    background-color: #D9D9D9;
+    padding: 5px 10px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 5px 3px #00000049);
+}
+.alimento h3{
+    font-size: normal;
+}
+.alimento p{
+    font-size: 18px;
+    font-weight: normal;
+}
+.alimento p span{
+    font-weight: bold;
+    color: #CA262C;
+}
+.alimento .data{
+    font-size: 17px;
+    color: rgb(122, 122, 122)
+}

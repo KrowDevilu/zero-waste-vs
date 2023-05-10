@@ -1,0 +1,56 @@
+.box{
+    padding: 20px;
+}
+.voltar-btn{
+    color: black;
+}
+h2, h3{
+    color: #D99D2A;
+}
+h2{
+    font-weight: normal;
+}
+p{
+    color: #999EA1;
+    margin-bottom: 50px;
+}
+
+.tipo-alimento{
+    display: flex;
+}
+.alimento{
+    margin-right: 15px;
+    width: 100%;
+}
+.alimento .select{
+    width: 100%;
+}
+.input{
+    max-width: 200px;
+}
+@media screen and (max-width: 480px){
+    .tipo-alimento{
+        justify-content: space-between;
+    }
+    .quantidade .input{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 310px){
+    .tipo-alimento{
+        display: block;
+        width: 100%;
+        padding-bottom: 20px;
+        border-bottom: #C6C6C6 dashed 2px;
+    }
+    
+    .alimento{
+        margin-right: 0;
+    }
+    .quantidade{
+        width: 100%;
+    }
+    .quantidade .input{
+        max-width: fit-content;
+    }
+}
