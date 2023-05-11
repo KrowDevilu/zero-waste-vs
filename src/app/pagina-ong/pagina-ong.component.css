@@ -1,7 +1,9 @@
 
 .voltar-btn{
     background-color: #CA262C;
-    color: white;
+}
+.voltar-btn img{
+    filter:invert(100%);
 }
 .header{
     background-color: #CA262C;
@@ -43,7 +45,7 @@
     color: #D99D2A;
 }
 .alimento{
-    background-color: #D9D9D9;
+    background-color: hsl(0, 0%, 88%);
     padding: 5px 10px;
     border-radius: 20px;
     filter: drop-shadow(0px 5px 3px #00000049);
@@ -62,4 +64,27 @@
 .alimento .data{
     font-size: 17px;
     color: rgb(122, 122, 122)
+}
+
+.progress-bar{
+    background-color: #a5a5a5;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    text-align: right;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress-bar p{
+    position: absolute;
+    right: 20px;
+    color: white;
+}
+.progress-bar .progress{
+    content: ' ';
+    background-color: #CA262C;
+    width: 100%;
+    border-radius: 50px;
+    height: 20px;
 }

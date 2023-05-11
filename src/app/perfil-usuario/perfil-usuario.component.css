@@ -1,0 +1,76 @@
+.box{
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.voltar-btn{
+    color: black;
+}
+h1{
+    margin-bottom: 80px;
+}
+.categorias{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.categoria{
+    text-align: left;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #D99D2A;
+    border-radius: 10px;
+    padding: 10px 10px 0px 10px;
+    width: 100%;
+    max-width: 400px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+}
+.categoria:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.break{
+    display: none;
+}
+.categoria div{
+    background-color: rgba(255, 255, 255, 0.39);
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    padding: 12px;
+    text-align: center;
+}
+.categoria div img{
+    position: relative;
+    top: -2px;
+    left: -1px;
+}
+@media screen and (max-width: 1300px){
+    .break{
+        display: initial;
+        width: 80px;
+    }   
+}
+@media screen and (max-width: 480px){
+    .break{
+        width: 40px;
+    }   
+}
+@media screen and (max-width: 390px){
+    h1, h3{
+        text-align: center;
+    }
+    .categorias{
+        display:grid;
+        justify-content: space-evenly;
+    }
+    .categoria{
+        margin-bottom: 20px;
+    }
+}

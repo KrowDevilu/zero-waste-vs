@@ -7,9 +7,11 @@
 }
 .voltar-btn{
     background-color: #D99D2A;
-    color: white;
+    
 }
-
+.voltar-btn img{
+    filter:invert(100%);
+}
 .filtragem{
     background-color: #D99D2A;
     width: 100%;

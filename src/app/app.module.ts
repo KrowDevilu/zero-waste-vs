@@ -7,6 +7,8 @@ import { TipoUsuarioComponent } from './tipo-usuario/tipo-usuario.component';
 import { PesquisaDoarComponent } from './pesquisa-doar/pesquisa-doar.component';
 import { AddAlimentoComponent } from './add-alimento/add-alimento.component';
 import { PaginaOngComponent } from './pagina-ong/pagina-ong.component';
+import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
+import { MinhasSolicitacoesComponent } from './minhas-solicitacoes/minhas-solicitacoes.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { PaginaOngComponent } from './pagina-ong/pagina-ong.component';
     TipoUsuarioComponent,
     PesquisaDoarComponent,
     AddAlimentoComponent,
-    PaginaOngComponent
+    PaginaOngComponent,
+    PerfilUsuarioComponent,
+    MinhasSolicitacoesComponent
   ],
   imports: [
     BrowserModule,

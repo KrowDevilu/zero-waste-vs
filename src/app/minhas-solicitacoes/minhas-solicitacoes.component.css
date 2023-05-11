@@ -1,0 +1,61 @@
+.box{
+    padding:20px;
+}
+h1{
+    font-weight: normal;
+}
+.envia-btn{
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 20px;
+}
+.envia-btn img{
+    margin-right: 10px;
+}
+.solicitacoes{
+    display: grid;
+}
+.solicitacao{
+    background-color:hsla(0, 0%, 80%, 0.31);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.solicitacao p span{
+    color: #CA262C;
+    font-weight: bold;
+}
+.solicitacao .info{
+    font-weight: bold;
+}
+
+.solicitacao .opt{
+    display: grid;
+}
+.solicitacao a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.3s;
+}
+.solicitacao a:hover{
+    font-size: 25px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.solicitacao .alterar{
+    align-self: flex-start;
+    color: #8FB021;
+}
+.solicitacao .excluir{
+    align-self: flex-end;
+    color: #E24329;
+}
+@media screen and (max-width:390px){
+    .envia-btn{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

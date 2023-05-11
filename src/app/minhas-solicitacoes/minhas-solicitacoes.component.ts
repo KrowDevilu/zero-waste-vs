@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
-  selector: 'app-add-alimento',
-  templateUrl: './add-alimento.component.html',
-  styleUrls: ['./add-alimento.component.css']
+  selector: 'app-minhas-solicitacoes',
+  templateUrl: './minhas-solicitacoes.component.html',
+  styleUrls: ['./minhas-solicitacoes.component.css']
 })
-export class AddAlimentoComponent {
+export class MinhasSolicitacoesComponent {
   constructor(private router: Router) {}
   goToPage(pageName:string){
     this.router.navigate([`${pageName}`]);
