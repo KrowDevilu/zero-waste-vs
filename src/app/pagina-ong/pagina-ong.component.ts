@@ -1,16 +1,30 @@
 import {  AfterViewInit, Component } from '@angular/core';
+import { OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+
+import {ongs} from '../ongs';
 
 @Component({
   selector: 'app-pagina-ong',
   templateUrl: './pagina-ong.component.html',
   styleUrls: ['./pagina-ong.component.css']
 })
-export class PaginaOngComponent implements AfterViewInit {
-  constructor() { }
-  percentage = 100;
+export class PaginaOngComponent implements AfterViewInit{
+  constructor(private route: ActivatedRoute) { }
+  percentage = 12;
+  ongs = ongs;
   
   ngAfterViewInit() {
     const myElement = document.getElementById("progress") as HTMLElement;
     myElement.style.width = `${this.percentage}%`;
-  }
+  }  
+
+  // @ts-ignore: Object is possibly 'null'.
+  id: number;
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((params: ParamMap) => {
+      // @ts-ignore: Object is possibly 'null'.
+      this.id = +params.get('id');
+    });}
 }

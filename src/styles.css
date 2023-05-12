@@ -22,10 +22,11 @@ button{
 }
 
 .input, .select{
+    padding: 7px;
     border: #C6C6C6 solid 2px;
     border-radius: 7px;
-    font-size: 24px;
-    color: #9E9E9E;
+    font-size: 20px;
+    /* color: #9E9E9E; */
 }
 .input:hover, .select:hover{
     border: #D99D2A solid 2px;

@@ -1,21 +1,20 @@
 <div class="box">
-    <a href="" class="voltar"><div class="voltar-btn"><img src="../../assets/Voltar.png" alt=""></div></a>
-
+    <a href="pesquisa" class="voltar"><div class="voltar-btn"><img src="../../assets/Voltar.png" alt=""></div></a>
     <div class="header">
-        <h1>NOME DA ONG</h1>
+        <h1>{{ongs[id].nome}}</h1>
         <p class="guide">Saiba mais sobre a ONG:</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quidem, sunt earum aliquid id expedita! Ut, in culpa ipsam enim veniam voluptas similique quos ad deserunt natus nobis error saepe.</p>
+        <p>{{ongs[id].descricao}}</p>
     </div>
     <div class="local">
         <p>Para doar basta verificar o endereço abaixo e enviar os alimentos necessários para a ONG.</p>
         <div>
-            <h3>Cidade: <span>CIDADE DA ONG</span></h3>
+            <h3>Cidade: <span>{{ongs[id].local.cidade}}</span></h3>
         </div>
         <div>
-            <h3>Estado: <span>ESTADO DA ONG</span></h3>
+            <h3>Estado: <span>{{ongs[id].local.estado}}</span></h3>
         </div>
         <div>
-            <h3>Endereço: <span>ENDEREÇO DA ONG</span></h3>
+            <h3>Endereço: <span>{{ongs[id].local.endereco}}</span></h3>
         </div>
     </div>
     <div class="alimentos">

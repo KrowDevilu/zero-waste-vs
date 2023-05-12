@@ -9,6 +9,7 @@ import { AddAlimentoComponent } from './add-alimento/add-alimento.component';
 import { PaginaOngComponent } from './pagina-ong/pagina-ong.component';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 import { MinhasSolicitacoesComponent } from './minhas-solicitacoes/minhas-solicitacoes.component';
+import { MeusDadosComponent } from './meus-dados/meus-dados.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MinhasSolicitacoesComponent } from './minhas-solicitacoes/minhas-solici
     AddAlimentoComponent,
     PaginaOngComponent,
     PerfilUsuarioComponent,
-    MinhasSolicitacoesComponent
+    MinhasSolicitacoesComponent,
+    MeusDadosComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddAlimentoComponent } from './add-alimento/add-alimento.component';
+import { MeusDadosComponent } from './meus-dados/meus-dados.component';
 import { MinhasSolicitacoesComponent } from './minhas-solicitacoes/minhas-solicitacoes.component';
 import { PaginaOngComponent } from './pagina-ong/pagina-ong.component';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
@@ -11,9 +12,10 @@ const routes: Routes = [
   { path: '', component: TipoUsuarioComponent },
   { path: 'pesquisa', component: PesquisaDoarComponent },
   { path: 'add-solicitacao', component: AddAlimentoComponent },
-  {path: 'pagina-ong', component: PaginaOngComponent},
+  {path: 'pagina-ong/:id', component: PaginaOngComponent},
   {path: 'perfil/:tipo', component: PerfilUsuarioComponent},
-  {path: 'minhas-solicitacoes', component: MinhasSolicitacoesComponent}
+  {path: 'minhas-solicitacoes', component: MinhasSolicitacoesComponent},
+  {path: 'meus-dados', component: MeusDadosComponent}
 ];
 
 @NgModule({

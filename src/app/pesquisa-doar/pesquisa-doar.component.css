@@ -7,7 +7,6 @@
 }
 .voltar-btn{
     background-color: #D99D2A;
-    
 }
 .voltar-btn img{
     filter:invert(100%);
@@ -44,6 +43,7 @@
 .solicitacao{
     border: solid 2px #CBCBCB;
     padding: 0 20px 20px 20px;
+    margin-bottom: 25px;
 }
 .solicitacao p{
     font-weight: bold;

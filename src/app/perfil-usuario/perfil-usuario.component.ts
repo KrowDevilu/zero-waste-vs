@@ -19,6 +19,6 @@ export class PerfilUsuarioComponent {
     }else{
       return '';
     }
-
   }
+
 }
