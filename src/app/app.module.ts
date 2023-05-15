@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,4 +30,25 @@ import { MeusDadosComponent } from './meus-dados/meus-dados.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private router: Router) {}
+  user = "";
+  autenticate(tipo : String){
+    // @ts-ignore: Object is possibly 'null'.
+    this.user = tipo;
+  }
+  autenticate_route(rota: String){
+    if (rota == 'solicitacoes'){
+      if (this.user == "doador"){
+        return 'pesquisa';
+      }
+      else if (this.user == "ong"){
+        return 'minhas-solicitacoes';
+      }else{
+        return '';
+      }
+    }else{
+      return '';
+    }
+  }
+ }
