@@ -11,6 +11,14 @@ import { PaginaOngComponent } from './pagina-ong/pagina-ong.component';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 import { MinhasSolicitacoesComponent } from './minhas-solicitacoes/minhas-solicitacoes.component';
 import { MeusDadosComponent } from './meus-dados/meus-dados.component';
+import { LoginComponent } from './login/login.component';
+import { CadONGComponent } from './cad-ong/cad-ong.component';
+import { CadUserComponent } from './cad-user/cad-user.component';
+import { ConfCcComponent } from './conf-cc/conf-cc.component';
+import { RecupPasswordComponent } from './recup-password/recup-password.component';
+import { ConfEeComponent } from './conf-ee/conf-ee.component';
+import { DeletarcontaComponent } from './deletarconta/deletarconta.component';
+import { ComprovanteComponent } from './comprovante/comprovante.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +29,15 @@ import { MeusDadosComponent } from './meus-dados/meus-dados.component';
     PaginaOngComponent,
     PerfilUsuarioComponent,
     MinhasSolicitacoesComponent,
-    MeusDadosComponent
+    MeusDadosComponent,
+    LoginComponent,
+    CadONGComponent,
+    CadUserComponent,
+    ConfCcComponent,
+    RecupPasswordComponent,
+    ConfEeComponent,
+    DeletarcontaComponent,
+    ComprovanteComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +53,9 @@ export class AppModule {
     // @ts-ignore: Object is possibly 'null'.
     this.user = tipo;
   }
+  getAtutentication(){
+    return this.user;
+  }
   autenticate_route(rota: String){
     if (rota == 'solicitacoes'){
       if (this.user == "doador"){
@@ -44,6 +63,15 @@ export class AppModule {
       }
       else if (this.user == "ong"){
         return 'minhas-solicitacoes';
+      }else{
+        return '';
+      }
+    }else if(rota == 'comprovante'){
+      if (this.user == "doador"){
+        return '';
+      }
+      else if (this.user == "ong"){
+        return 'comprovante';
       }else{
         return '';
       }

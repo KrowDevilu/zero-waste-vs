@@ -7,6 +7,14 @@ import { PaginaOngComponent } from './pagina-ong/pagina-ong.component';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 import { PesquisaDoarComponent } from './pesquisa-doar/pesquisa-doar.component';
 import { TipoUsuarioComponent } from './tipo-usuario/tipo-usuario.component';
+import { LoginComponent } from './login/login.component';
+import { CadONGComponent } from './cad-ong/cad-ong.component';
+import { CadUserComponent } from './cad-user/cad-user.component';
+import { ConfCcComponent } from './conf-cc/conf-cc.component';
+import { RecupPasswordComponent } from './recup-password/recup-password.component';
+import { ConfEeComponent } from './conf-ee/conf-ee.component';
+import { DeletarcontaComponent } from './deletarconta/deletarconta.component';
+import { ComprovanteComponent } from './comprovante/comprovante.component';
 
 const routes: Routes = [
   { path: '', component: TipoUsuarioComponent },
@@ -15,7 +23,15 @@ const routes: Routes = [
   {path: 'pagina-ong/:id', component: PaginaOngComponent},
   {path: 'perfil/:tipo', component: PerfilUsuarioComponent},
   {path: 'minhas-solicitacoes', component: MinhasSolicitacoesComponent},
-  {path: 'meus-dados', component: MeusDadosComponent}
+  {path: 'meus-dados', component: MeusDadosComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'cadastroONG', component: CadONGComponent},
+  {path: 'cadastrousuario', component:CadUserComponent},
+  {path: 'confirmacaodecad', component:ConfCcComponent},
+  {path: 'recupsenha', component:RecupPasswordComponent},
+  {path: 'confemail', component:ConfEeComponent},
+  {path: 'deletarconta', component:DeletarcontaComponent},
+  {path: 'comprovante', component:ComprovanteComponent}
 ];
 
 @NgModule({

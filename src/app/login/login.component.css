@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Manrope', sans-serif;
+    
+}
+
+.input, .select{
+
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    border-radius: 10px;
+    height: 41px;
+    width: 325px;
+    border-radius: 10px;
+    border-color: #C6C6C6;
+    
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    padding-left: 7%
+    
+}
+
+ /* Oi, Bem-vindo de volta! */
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+.titulo{
+   
+    padding-top: 10%;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+
+    color: #000000;
+
+}
+
+/* Formuário */
+.input{
+
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    border-radius: 10px;
+    height: 41px;
+    width: 325px;
+    border-radius: 10px;
+    
+
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    
+}
+
+
+.form{
+    padding-top: 35%;
+ 
+}
+
+.passw_forgot{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 3%;
+    padding-top: 5%;
+    color: #FB344F;
+    font-weight: 600;
+
+}
+
+
+.footer-cadastro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 5%;
+    padding-top: 100%;
+    
+}
+
+.footer-cadastro-one{
+    color: #999EA1;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.footer-cadastro-two{
+   color: #D99D2A;
+   font-weight: 600;
+   font-size: 14px;
+   
+}
+
+
+label{
+    color: #D99D2A;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 17px;
+    
+
+    list-style: none;
+    background-color: #D99D2A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+    border: none;
+
+    height: 41px;
+    width: 325px;
+    border-radius: 10px;
+    
+    
+}
