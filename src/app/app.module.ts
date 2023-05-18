@@ -19,6 +19,7 @@ import { RecupPasswordComponent } from './recup-password/recup-password.componen
 import { ConfEeComponent } from './conf-ee/conf-ee.component';
 import { DeletarcontaComponent } from './deletarconta/deletarconta.component';
 import { ComprovanteComponent } from './comprovante/comprovante.component';
+import { FazerAgendamentoComponent } from './fazer-agendamento/fazer-agendamento.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ComprovanteComponent } from './comprovante/comprovante.component';
     RecupPasswordComponent,
     ConfEeComponent,
     DeletarcontaComponent,
-    ComprovanteComponent
+    ComprovanteComponent,
+    FazerAgendamentoComponent
   ],
   imports: [
     BrowserModule,

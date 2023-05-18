@@ -1,0 +1,47 @@
+.box{
+    padding: 20px;
+}
+h2{
+    color: #9E9E9E;
+}
+h3{
+    color: #D99D2A;
+}
+
+.holder{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.dia .select{
+    width: 100%;
+}
+.hora .input{
+    width: fit-content;
+    max-width: 100px;
+}
+.holder .dia{
+    width: 100%;
+}
+.holder .hora{
+    width: fit-content;
+    
+}
+@media screen and (max-width: 420px){
+    .holder{
+        display: contents;
+    }
+    
+    .dia .select{
+        margin-right: 0;
+    }
+    .holder .hora{
+        width: 100%;
+        max-width: 100%;
+        background-color: blue;
+    }
+    .hora .input{
+        width: 100%;
+        max-width: 100%;
+    }
+}
