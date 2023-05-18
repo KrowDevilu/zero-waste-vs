@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./fazer-agendamento.component.css']
 })
 export class FazerAgendamentoComponent {
-
+  createComponent() {
+    const produto = document.getElementById('prod');
+    let cloneProduto = produto?.cloneNode(true);
+    document.getElementById('produtos')?.appendChild(cloneProduto as Node);
+  }
 }

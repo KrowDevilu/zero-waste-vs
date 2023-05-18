@@ -3,16 +3,48 @@
     <h1>Faça seu agendamento!</h1>
     <br>
     <h2>NOME DA SOLICITAÇÃO</h2>
-    <div class="holder">
-        <div class="dia">
-            <h3>Selecione o dia da sua visita: </h3>
-            <select name="" id="" class="select">
-                <option value="" selected>Segunda</option>
-            </select>
+    <div class="holder data">
+        <h3>Selecione o data da sua visita: </h3>
+        <div class="info">
+            <div class="dia">
+                <select name="" id="" class="select">
+                    <option value="" >Domingo</option>
+                    <option value="" selected>Segunda-feira</option>
+                    <option value="" >Terça-feira</option>
+                    <option value="" >Quarta-feira</option>
+                    <option value="" >Quinta-feira</option>
+                    <option value="" >Sexta-feira</option>
+                    <option value="" >Sábado</option>
+                </select>
+            </div>
+            <div class="hora">
+                <input type="time" class="input" placeholder="12:00">
+            </div>
         </div>
-        <div class="hora">
-            <h3>horário:</h3>
-            <input type="text" class="input" placeholder="12:00">
+    </div>
+    <div class="holder" id="produtos">
+        <div class="alimentoInfo" id="prod">
+            <div class="alimento">
+                <h3>Selecione o que deseja doar:</h3>
+                <select name="" id="" class="select">
+                    <option value="">Arroz</option>
+                </select>
+            </div>
+            <div class="quantidade">
+                <h3>Quantidade:</h3>
+                <input type="text" class="input" placeholder="0 Kg">
+            </div>    
         </div>
-    </div>    
+    </div>      
+    <div class="btn-holder">
+        <button class="envia-btn" (click)="createComponent()">
+            <img src="../../assets/mais.png" alt="">Adicionar outro
+        </button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="btn-holder">
+        <button class="confirma-btn">Agenda</button>
+    </div>
 </div>
