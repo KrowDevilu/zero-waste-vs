@@ -1,24 +1,3 @@
-* {
-    
-    margin: 0;
-    padding: 0;
-    
-    font-family: 'Manrope', sans-serif;
-    
-}
-
-.input, .select{
-
-    background: #FFFFFF;
-    border: 1px solid #C6C6C6;
-    border-radius: 10px;
-    height: 41px;
-    width: 325px;
-    border-radius: 10px;
-    border-color: #C6C6C6;
-    
-
-}
 .box-text{
 
     height: 183px;
@@ -52,7 +31,8 @@ button{
     font-size: 17px;
    
     list-style: none;
-    background-color: #242A31;
+    background-color: #CA262C;
+    ;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);;
     border: none;
 
@@ -60,3 +40,36 @@ button{
     width: 344px;
     border-radius: 10px;
 }
+
+@media (min-width: 1024px){
+
+    * {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .titulo{
+        width: 100%;
+    }
+    
+    }
+    @media (min-width: 720px){
+    
+        * {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+    }
+    @media (min-width: 500px){
+
+        * {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
