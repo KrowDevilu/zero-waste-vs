@@ -18,18 +18,19 @@ import { ComprovanteComponent } from './comprovante/comprovante.component';
 import { FazerAgendamentoComponent } from './fazer-agendamento/fazer-agendamento.component';
 
 const routes: Routes = [
-  { path: '', component: TipoUsuarioComponent },
+  { path: '',   redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent},
   { path: 'pesquisa', component: PesquisaDoarComponent },
   { path: 'add-solicitacao', component: AddAlimentoComponent },
-  {path: 'pagina-ong/:id', component: PaginaOngComponent},
+  { path: 'pagina-ong/:id', component: PaginaOngComponent},
   {path: 'perfil/:tipo', component: PerfilUsuarioComponent},
   {path: 'minhas-solicitacoes', component: MinhasSolicitacoesComponent},
   {path: 'meus-dados', component: MeusDadosComponent},
-  {path: 'login', component: LoginComponent},
+  {path: 'cadastro', component: TipoUsuarioComponent },
   {path: 'cadastroONG', component: CadONGComponent},
   {path: 'cadastrousuario', component:CadUserComponent},
   {path: 'confirmacaodecad', component:ConfCcComponent},
-  {path: 'recupsenha', component:RecupPasswordComponent},
+  {path: 'recuperarsenha', component:RecupPasswordComponent},
   {path: 'confemail', component:ConfEeComponent},
   {path: 'deletarconta', component:DeletarcontaComponent},
   {path: 'comprovante', component:ComprovanteComponent},

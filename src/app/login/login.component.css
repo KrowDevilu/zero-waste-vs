@@ -65,9 +65,11 @@ body{
     flex-direction: row;
     padding-right: 3%;
     padding-top: 5%;
-    color: #FB344F;
     font-weight: 600;
 
+}
+.passw_forgot a{
+    color: #FB344F;
 }
 
 

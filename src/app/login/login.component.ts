@@ -9,6 +9,6 @@ import { AppModule } from '../app.module';
 export class LoginComponent {
   constructor(private router: Router, private app: AppModule) {}
   login(){
-    this.router.navigate([`perfil/${this.app.getAtutentication()}`]);
+    this.router.navigate([`cadastro${this.app.getAutentication()}`]);
   }
 }

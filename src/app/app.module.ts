@@ -55,7 +55,7 @@ export class AppModule {
     // @ts-ignore: Object is possibly 'null'.
     this.user = tipo;
   }
-  getAtutentication(){
+  getAutentication(){
     return this.user;
   }
   autenticate_route(rota: String){
