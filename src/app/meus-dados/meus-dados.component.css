@@ -24,13 +24,12 @@ h1{
 .confirma-btn{
     margin-bottom: 50px;
 }
-.delete{
-    padding-bottom: 5px;
-    border-bottom: #C6C6C6 solid 2px;
-}
 .delete a{
     color: #CA262C;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
+    border-bottom: #C6C6C6 solid 2px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }

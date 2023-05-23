@@ -28,13 +28,23 @@
     color: #D99D2A;
 }
 .local div{
-    border-bottom: #C6C6C6 solid 2px;
+    border-bottom: #C6C6C6 dashed 2px;
 }
 .local div h3{
     color: #CA262C;
 }
 .local div h3 span{
     color:black;
+}
+.local div .funcionamento{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none;
+}
+.local div .funcionamento span{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
 }
 .alimentos{
     padding: 0px 20px;
@@ -86,4 +96,56 @@
     width: 100%;
     border-radius: 50px;
     height: 20px;
+}
+
+/* FAV NOVO */
+
+.fav-container{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 45px;
+    right: 45px;
+}
+.fav-container button{
+    background-color: white;
+    border: solid 2px #CA262C;
+    border-radius: 100px;
+    padding: 0px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+}
+.fav-container button img{
+    width: 40px;
+    position: relative;
+    top: 4px;
+    transition: 0.3s;
+}
+.fav-container button:hover{
+    background-color: #CA262C;
+    border: solid 2px white;
+    transition: 0.3s;
+}
+.fav-container button:hover img{
+    filter: brightness(0) invert(1);
+    transition: 0.3s;   
+}
+@media screen and (max-width:360px){
+    .fav-container{
+        justify-content: center;
+        position: initial;
+        width: 100%;
+    }
+    .fav-container button{
+        background-color: white;
+        border: solid 2px #CA262C;
+        border-radius: 100px;
+        padding: 0px 0px 0px 0px;
+        margin-left: 0;
+        max-width: 80%;
+        width: 100%;
+        transition: 0.3s;
+    }
+    
 }

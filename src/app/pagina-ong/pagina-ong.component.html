@@ -5,6 +5,9 @@
         <p class="guide">Saiba mais sobre a ONG:</p>
         <p>{{ongs[id].descricao}}</p>
     </div>
+    <div class="fav-container">
+        <button (click)="updateFav()"><img id="fav" src="{{fav_src}}"></button>
+    </div>
     <div class="local">
         <p>Para doar basta verificar o endereço abaixo e enviar os alimentos necessários para a ONG.</p>
         <div>
@@ -16,11 +19,15 @@
         <div>
             <h3>Endereço: <span>{{ongs[id].local.endereco}}</span></h3>
         </div>
+        <div>
+            <h3>Funcionamento:
+                <br>
+                <div class="funcionamento"><span class="dia">seg. a sex.</span><span class="horario">08:00 até 18:00</span></div></h3>
+        </div>
     </div>
     <div class="alimentos">
         <h2>Alimentos que você pode doar:</h2>
         <div class="alimento">
-            <h3>Detalhes</h3>
             <p>Alimento: <span>ALIMENTO NESCESSITADO</span></p>
             <p>Quantidade: <span>QUANTIDADE NESCESSITADA</span></p>
             <p class="data">Solicitação realizada no dia: xx/xx/xxxx</p>    
