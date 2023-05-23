@@ -10,8 +10,8 @@ export class CadUserComponent {
   constructor(private router: Router, private app: AppModule) {}
   login(){
     let aut = this.app.getAutentication();
-    if (aut == ""){
-      aut = "doador";
+    if (aut == ''){
+      aut = 'doador';
       this.app.autenticate(aut);
     }
     this.router.navigate([`perfil/${aut}`]);

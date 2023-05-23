@@ -70,7 +70,7 @@ export class AppModule {
       }
     }else if(rota == 'comprovante'){
       if (this.user == "doador"){
-        return 'agendando';
+        return 'agendamento';
       }
       else if (this.user == "ong"){
         return 'comprovante';

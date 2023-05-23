@@ -34,7 +34,7 @@ const routes: Routes = [
   {path: 'confemail', component:ConfEeComponent},
   {path: 'deletarconta', component:DeletarcontaComponent},
   {path: 'comprovante', component:ComprovanteComponent},
-  {path: 'agendando', component:FazerAgendamentoComponent}
+  {path: 'agendamento', component:FazerAgendamentoComponent}
 ];
 
 @NgModule({

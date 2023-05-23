@@ -10,8 +10,8 @@ export class CadONGComponent {
   constructor(private router: Router, private app: AppModule) {}
   login(){
     let aut = this.app.getAutentication();
-    if (aut == ""){
-      aut = "ong";
+    if (aut == ''){
+      aut = 'ong';
       this.app.autenticate(aut);
     }
     this.router.navigate([`perfil/${aut}`]);
