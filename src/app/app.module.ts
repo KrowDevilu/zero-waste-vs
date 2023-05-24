@@ -20,6 +20,9 @@ import { ConfEeComponent } from './conf-ee/conf-ee.component';
 import { DeletarcontaComponent } from './deletarconta/deletarconta.component';
 import { ComprovanteComponent } from './comprovante/comprovante.component';
 import { FazerAgendamentoComponent } from './fazer-agendamento/fazer-agendamento.component';
+import { PaginaDaSolicitacaoComponent } from './pagina-da-solicitacao/pagina-da-solicitacao.component';
+import { MeusAgendamentosComponent } from './meus-agendamentos/meus-agendamentos.component';
+import { AgendamentoComponent } from './agendamento/agendamento.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { FazerAgendamentoComponent } from './fazer-agendamento/fazer-agendamento
     ConfEeComponent,
     DeletarcontaComponent,
     ComprovanteComponent,
-    FazerAgendamentoComponent
+    FazerAgendamentoComponent,
+    PaginaDaSolicitacaoComponent,
+    MeusAgendamentosComponent,
+    AgendamentoComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +76,7 @@ export class AppModule {
       }
     }else if(rota == 'comprovante'){
       if (this.user == "doador"){
-        return 'agendamento';
+        return 'meusagendamentos';
       }
       else if (this.user == "ong"){
         return 'comprovante';

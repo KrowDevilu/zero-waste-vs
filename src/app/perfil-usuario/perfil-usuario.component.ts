@@ -9,6 +9,7 @@ import { OnInit } from '@angular/core';
 })
 export class PerfilUsuarioComponent{
   constructor(private router: Router,private app:AppModule) {}
+  tipoConta = "";
   goToPage(pageName:string){
     this.router.navigate([`${pageName}`]);
   }
@@ -17,7 +18,9 @@ export class PerfilUsuarioComponent{
     this.router.navigate([`${rot}`]);
   }
   ngOnInit(): void {
-    if (this.app.user == ''){
+    this.tipoConta = this.app.getAutentication();
+    console.log(this.tipoConta);
+    if (this.tipoConta == ''){
       this.router.navigate(['']);
     }
   }

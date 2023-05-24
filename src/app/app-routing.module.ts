@@ -16,6 +16,9 @@ import { ConfEeComponent } from './conf-ee/conf-ee.component';
 import { DeletarcontaComponent } from './deletarconta/deletarconta.component';
 import { ComprovanteComponent } from './comprovante/comprovante.component';
 import { FazerAgendamentoComponent } from './fazer-agendamento/fazer-agendamento.component';
+import { PaginaDaSolicitacaoComponent } from './pagina-da-solicitacao/pagina-da-solicitacao.component';
+import { MeusAgendamentosComponent } from './meus-agendamentos/meus-agendamentos.component';
+import { AgendamentoComponent } from './agendamento/agendamento.component';
 
 const routes: Routes = [
   { path: '',   redirectTo: 'login', pathMatch: 'full' },
@@ -34,7 +37,10 @@ const routes: Routes = [
   {path: 'confemail', component:ConfEeComponent},
   {path: 'deletarconta', component:DeletarcontaComponent},
   {path: 'comprovante', component:ComprovanteComponent},
-  {path: 'agendamento', component:FazerAgendamentoComponent}
+  {path: 'criaragendamento', component:FazerAgendamentoComponent},
+  {path: 'paginaSolicitacao', component: PaginaDaSolicitacaoComponent},
+  {path: 'meusagendamentos', component: MeusAgendamentosComponent},
+  {path: 'agendamento', component: AgendamentoComponent},
 ];
 
 @NgModule({

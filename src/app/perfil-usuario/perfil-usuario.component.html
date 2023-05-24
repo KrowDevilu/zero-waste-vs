@@ -6,12 +6,16 @@
     <div class="categorias">
         <button class="categoria" (click)="autenticate('solicitacoes')">
             <div><img src="../../assets/coracao-de-mao.png" alt="icone" class="icone"></div>
-            <p>Ver minhas Solicitações</p>
+            <div *ngIf="tipoConta == 'ong'; then thenBlock else elseBlock"></div>
+            <ng-template #thenBlock><p>Ver minhas Solicitações</p></ng-template>
+            <ng-template #elseBlock><p>Ver Solicitações</p></ng-template>
         </button>
         <a class="break"></a>
         <button class="categoria" (click)="autenticate('comprovante')">
             <div><img src="../../assets/fatura-de-arquivo.png" alt="icone" class="icone"></div>
-            <p>Gerar Comprovante</p>
+            <div *ngIf="tipoConta == 'ong'; then thenBlock1 else elseBlock1"></div>
+            <ng-template #thenBlock1><p>Gerar comprovante</p></ng-template>
+            <ng-template #elseBlock1><p>Meus agendamentos</p></ng-template>
         </button>
         <a class="break"></a>
         <button class="categoria" (click)="goToPage('meus-dados')">
