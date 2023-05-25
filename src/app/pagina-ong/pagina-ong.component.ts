@@ -2,7 +2,7 @@ import {  AfterViewInit, Component } from '@angular/core';
 import { OnInit } from '@angular/core';
 import { HammerGestureConfig } from '@angular/platform-browser';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-
+import { Router } from '@angular/router';
 import {ongs} from '../ongs';
 
 @Component({
@@ -11,12 +11,15 @@ import {ongs} from '../ongs';
   styleUrls: ['./pagina-ong.component.css']
 })
 export class PaginaOngComponent implements AfterViewInit{
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private router: Router) { }
   percentage = 12;
   ongs = ongs;
   heart = { outline: "../../assets/heart-outline.png", full: "../../assets/heart-full.png"}
   fav_src = this.heart.outline;
   favved = false
+  goToPage(pageName:String){
+    this.router.navigate([`${pageName}`]);
+  }
   updateFav(){
     if (this.favved == false){
       this.fav_src = this.heart.full;

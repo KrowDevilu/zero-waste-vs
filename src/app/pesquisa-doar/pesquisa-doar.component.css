@@ -41,17 +41,33 @@
     margin: 0 20px;
 }
 .solicitacao{
+    text-align: left;
     border: solid 2px #CBCBCB;
     padding: 0 20px 20px 20px;
     margin-bottom: 25px;
+    background-color: #00000000;
+    
+    transition: all 0.3s;
+}
+.solicitacao:hover{
+    border: solid 4px #CBCBCB;
+    padding: 0 10px 10px 10px;
+    background-color: #d1d1d1;
+    transition: all 0.3s;
 }
 .solicitacao p{
     font-weight: bold;
 }
 .solicitacao p span{
-    color: #CA262C;
-}
-.solicitacao a{
-    text-decoration: none;
     color: #8FB021;
+    font-weight: lighter;
+}
+.solicitacao .ali{
+    color: #CA262C;
+    margin-left: 10px;
+}
+.solicitacao .nome-sol{
+    font-weight: lighter;
+    font-size: 15px;
+    margin-left: 10px;
 }

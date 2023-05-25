@@ -26,8 +26,9 @@
         </div>
     </div>
     <div class="alimentos">
-        <h2>Alimentos que você pode doar:</h2>
-        <div class="alimento">
+        <h2>Solicitações em Aberto:</h2>
+        <button class="alimento" (click)="goToPage('paginaSolicitacao')">
+            <h1 class="nome-sol">Nome da Solicitação</h1>
             <p>Alimento: <span>ALIMENTO NESCESSITADO</span></p>
             <p>Quantidade: <span>QUANTIDADE NESCESSITADA</span></p>
             <p class="data">Solicitação realizada no dia: xx/xx/xxxx</p>    
@@ -35,6 +36,7 @@
                 <div class="progress" id="progress"></div>
                 <p>{{percentage}}%</p>
             </div>
-        </div>
+        </button>
     </div>
+    <br>
 </div>

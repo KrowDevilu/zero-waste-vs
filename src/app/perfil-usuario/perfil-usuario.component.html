@@ -23,4 +23,15 @@
             <p>Meu Dados</p>
         </button>
     </div>
+    <div *ngIf="tipoConta == 'ong'; then thenBlock2 else elseBlock2"></div>
+    <ng-template #thenBlock2><p>Gerar comprovante</p></ng-template>
+    <ng-template #elseBlock2>
+        <h1>ONG's Favoritas</h1>
+        <div class="ong-fav">
+            <div class="ong">
+                <img src="../../assets/heart-full.png" alt="">
+                <p>NOME DA ONG</p>
+            </div>
+        </div>
+    </ng-template>
 </div>

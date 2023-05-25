@@ -3,6 +3,7 @@
 }
 h2{
     color: #9E9E9E;
+    text-align: center;
 }
 h3{
     color: #D99D2A;
@@ -38,12 +39,14 @@ h3{
     border-bottom: 2px dashed #C6C6C6;
 }
 .alimentoInfo{
-    display: flex;
-    justify-content: space-between;
+    border-bottom: dashed 2px #C6C6C6;
 }
-.alimento {
-    width: 100%;
-    margin-right: 20px;
+.alimentoInfo p{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
 }
 .alimento .select{
     width: 100%;
@@ -57,6 +60,12 @@ h3{
 .confirma-btn{
     max-width: 300px;
     width: 100%;
+}
+a{
+    color: #8FB021;
+}
+.delete{
+    background-color: #CA262C;
 }
 @media screen and (max-width: 430px){
     .hora .input{

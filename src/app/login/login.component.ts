@@ -11,4 +11,9 @@ export class LoginComponent {
   login(){
     this.router.navigate([`cadastro${this.app.getAutentication()}`]);
   }
+  ngOnInit(): void {
+    if (this.app.user != ''){
+      this.router.navigate([`perfil/${this.app.getAutentication()}`]);
+    }
+  }
 }
