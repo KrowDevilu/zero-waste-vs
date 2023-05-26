@@ -54,16 +54,92 @@ h1{
 .ong-fav{
     border: solid #CA262C 1px;
     border-radius: 50px;
+    width: 100%;   
+    background-color: white;
+   transition: all 0.3s;
+}
+.ong-fav:hover{
+    border: solid #CA262C 3px;
+    border-radius: 50px;
+   transition: all 0.1s;
 }
 .ong{
     display: flex;
     text-align: center;
     align-items: center;
     padding: 0 20px;
+   
 }
 .ong img{
     width: 30px;
     height: 30px;
+}
+.ong p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #CA262C;
+}
+.alimento{
+    border: none;
+    width: 100%;
+    text-align: left;
+    background-color: hsl(0, 0%, 88%);
+    padding: 5px 10px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 5px 3px #00000049);
+    transition: all 0.3s;
+}
+.alimento:hover{
+    background-color: hsl(0, 0%, 71%);
+    transition: all 0.3s;
+}
+.alimento:hover .data{
+    color: white;
+    transition: all 0.3s;
+}
+.alimento h1{
+    text-align: center;
+    margin-bottom: -20px;
+}
+.alimento h3{
+    font-size: normal;
+}
+.alimento p{
+    font-size: 18px;
+    font-weight: normal;
+}
+.alimento p span{
+    font-weight: bold;
+    color: #CA262C;
+}
+.alimento .data{
+    font-size: 17px;
+    color: rgb(122, 122, 122);
+    transition: all 0.3s;
+}
+
+.progress-bar{
+    background-color: #a5a5a5;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    text-align: right;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress-bar p{
+    position: absolute;
+    right: 20px;
+    color: white;
+}
+.progress-bar .progress{
+    content: ' ';
+    background-color: #CA262C;
+    width: 100%;
+    border-radius: 50px;
+    height: 20px;
 }
 @media screen and (max-width: 1300px){
     .break{

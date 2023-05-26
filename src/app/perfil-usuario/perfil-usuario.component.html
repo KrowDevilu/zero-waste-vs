@@ -24,14 +24,25 @@
         </button>
     </div>
     <div *ngIf="tipoConta == 'ong'; then thenBlock2 else elseBlock2"></div>
-    <ng-template #thenBlock2><p>Gerar comprovante</p></ng-template>
+    <ng-template #thenBlock2> 
+        <h1>Últimas solicitações</h1>
+        <button class="alimento" (click)="goToPage('paginaSolicitacao')">
+            <h1 class="nome-sol">Nome da Solicitação</h1>
+            <p>Alimento: <span>ALIMENTO NESCESSITADO</span></p>
+            <p>Quantidade: <span>QUANTIDADE NESCESSITADA</span></p>
+            <p class="data">Solicitação realizada no dia: xx/xx/xxxx</p>    
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+                <p>{{percentage}}%</p>
+            </div>
+        </button></ng-template>
     <ng-template #elseBlock2>
         <h1>ONG's Favoritas</h1>
-        <div class="ong-fav">
+        <button class="ong-fav" (click)="goToPage('pagina-ong/0')">
             <div class="ong">
                 <img src="../../assets/heart-full.png" alt="">
                 <p>NOME DA ONG</p>
             </div>
-        </div>
+        </button>
     </ng-template>
 </div>

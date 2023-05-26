@@ -10,4 +10,9 @@ export class AddAlimentoComponent {
   goToPage(pageName:string){
     this.router.navigate([`${pageName}`]);
   }
+  createComponent() {
+    const produto = document.getElementById('prod');
+    let cloneProduto = produto?.cloneNode(true);
+    document.getElementById('produtos')?.appendChild(cloneProduto as Node);
+  }
 }

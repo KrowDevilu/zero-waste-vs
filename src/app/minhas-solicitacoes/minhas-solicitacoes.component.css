@@ -16,11 +16,17 @@ h1{
     display: grid;
 }
 .solicitacao{
+    cursor: pointer;
     background-color:hsla(0, 0%, 80%, 0.31);
     border-radius: 20px;
     padding: 10px;
-    display: flex;
-    justify-content: space-between;
+    text-align: left;
+    border: none;
+    transition: all 0.3s;
+}
+.solicitacao:hover{
+    background-color:hsla(0, 0%, 70%, 0.31);
+    transition: all 0.3s;
 }
 .solicitacao p span{
     color: #CA262C;
@@ -31,7 +37,11 @@ h1{
 }
 
 .solicitacao .opt{
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+}
+.solicitacao .opt a{
+    margin-bottom: 15px;
 }
 .solicitacao a{
     text-decoration: none;
@@ -52,6 +62,74 @@ h1{
 .solicitacao .excluir{
     align-self: flex-end;
     color: #E24329;
+}
+.alimento{
+    border: none;
+    width: 100%;
+    text-align: left;
+    background-color: hsl(0, 0%, 88%);
+    padding: 5px 10px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 5px 3px #00000049);
+    transition: all 0.3s;
+}
+.alimento:hover{
+    background-color: hsl(0, 0%, 71%);
+    transition: all 0.3s;
+}
+.alimento:hover .data{
+    color: white;
+    transition: all 0.3s;
+}
+.alimento h1{
+    text-align: center;
+}
+.alimento h3{
+    font-size: normal;
+}
+.alimento p{
+    font-size: 18px;
+    font-weight: normal;
+}
+.alimento p span{
+    font-weight: bold;
+    color: #CA262C;
+}
+.alimento .data{
+    font-size: 17px;
+    color: rgb(122, 122, 122);
+    transition: all 0.3s;
+}
+
+.progress-bar{
+    background-color: #a5a5a5;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    text-align: right;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress-bar p{
+    position: absolute;
+    right: 40px;
+    color: white;
+}
+.progress-bar .progress{
+    content: ' ';
+    background-color: #CA262C;
+    width: 100%;
+    border-radius: 50px;
+    height: 20px;
+}
+.up{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.up .sol-info{
+    width: 100%;
 }
 @media screen and (max-width:390px){
     .envia-btn{

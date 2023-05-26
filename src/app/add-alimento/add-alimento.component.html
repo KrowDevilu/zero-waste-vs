@@ -3,97 +3,38 @@
     <h2>Inserir solicitação de doação</h2>
     <h1>Do que sua ONG precisa?</h1>
     <p>Somente é permitido o cadastro de alimentos não-perecíveis.</p>
-    
-    <div class="tipo-alimento">
-        <div class="alimento">
-            <h3>Grãos e cereais</h3>
-            <select name="" id="" class="select">
-                <option value="">Selecione</option>
-            </select>
-        </div>
-        <div class="quantidade">
-            <h3>Quantidade</h3>
-            <input type="number" name="" id="" class="input">
+    <div class="nome-sol">
+        <input type="number" name="" id="" class="input nome" placeholder="Nome da Solicitação">
+        <textarea name="" id="" cols="" rows="5" class="input nome" placeholder="Estamos criando essa doação para arrecadar alimento para ..."></textarea>
+    </div>
+    <div class="alimentos" id="produtos">
+        <div class="alimento-cad" id="prod">
+            <h3>Selecione o tipo do alimento:</h3>
+                <select name="" id="" class="select">
+                    <option value="">Selecione</option>
+                </select>
+            <div class="tipo-alimento">
+                <div class="alimento">
+                    <h3>Selecione o que você precisa:</h3>
+                    <select name="" id="" class="select">
+                        <option value="">Selecione</option>
+                    </select>
+                </div>
+                <div class="quantidade">
+                    <h3>Quantidade</h3>
+                    <input type="number" name="" id="" class="input">
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="tipo-alimento">
-        <div class="alimento">
-            <h3>Farinhas e amidos</h3>
-            <select name="" id="" class="select">
-                <option value="">Selecione</option>
-            </select>
-        </div>
-        <div class="quantidade">
-            <h3>Quantidade</h3>
-            <input type="number" name="" id="" class="input">
-        </div>
+    <div class="btn-holder">
+        <button class="envia-btn" (click)="createComponent()">
+            <img src="../../assets/mais.png" alt="">Adicionar outro
+        </button>
     </div>
-
-    <div class="tipo-alimento">
-        <div class="alimento">
-            <h3>Conservas</h3>
-            <select name="" id="" class="select">
-                <option value="">Selecione</option>
-            </select>
-        </div>
-        <div class="quantidade">
-            <h3>Quantidade</h3>
-            <input type="number" name="" id="" class="input">
-        </div>
-    </div>
-
-    <div class="tipo-alimento">
-        <div class="alimento">
-            <h3>Óleos e gorduras</h3>
-            <select name="" id="" class="select">
-                <option value="">Selecione</option>
-            </select>
-        </div>
-        <div class="quantidade">
-            <h3>Quantidade</h3>
-            <input type="number" name="" id="" class="input">
-        </div>
-    </div>
-
-    <div class="tipo-alimento">
-        <div class="alimento">
-            <h3>Leites e derivados</h3>
-            <select name="" id="" class="select">
-                <option value="">Selecione</option>
-            </select>
-        </div>
-        <div class="quantidade">
-            <h3>Quantidade</h3>
-            <input type="number" name="" id="" class="input">
-        </div>
-    </div>
-
-    <div class="tipo-alimento">
-        <div class="alimento">
-            <h3>Bebidas</h3>
-            <select name="" id="" class="select">
-                <option value="">Selecione</option>
-            </select>
-        </div>
-        <div class="quantidade">
-            <h3>Quantidade</h3>
-            <input type="number" name="" id="" class="input">
-        </div>
-    </div>
-
-    <div class="tipo-alimento">
-        <div class="alimento">
-            <h3>Outros</h3>
-            <select name="" id="" class="select">
-                <option value="">Selecione</option>
-            </select>
-        </div>
-        <div class="quantidade">
-            <h3>Quantidade</h3>
-            <input type="number" name="" id="" class="input">
-        </div>
-    </div>
+    <br>
+    <br>
+    <br>
     <div class="btn-holder">
         <button class="confirma-btn" (click)="goToPage('minhas-solicitacoes')">Enviar</button>
     </div>

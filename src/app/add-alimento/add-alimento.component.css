@@ -14,7 +14,21 @@ p{
     color: #999EA1;
     margin-bottom: 50px;
 }
-
+.nome-sol{
+    padding-right: 20px;
+    border-bottom: dashed #C6C6C6 2px;
+}
+.nome-sol .nome{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.alimento-cad{
+    padding-bottom: 20px;
+    border-bottom: dashed #C6C6C6 2px;
+}
+.alimento-cad .select{
+    width: 100%;
+}
 .tipo-alimento{
     display: flex;
 }
@@ -25,7 +39,7 @@ p{
 .alimento .select{
     width: 100%;
 }
-.input{
+.quantidade .input{
     max-width: 200px;
 }
 @media screen and (max-width: 480px){
