@@ -23,6 +23,7 @@ import { FazerAgendamentoComponent } from './fazer-agendamento/fazer-agendamento
 import { PaginaDaSolicitacaoComponent } from './pagina-da-solicitacao/pagina-da-solicitacao.component';
 import { MeusAgendamentosComponent } from './meus-agendamentos/meus-agendamentos.component';
 import { AgendamentoComponent } from './agendamento/agendamento.component';
+import { AgendaComponent } from './agenda/agenda.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { AgendamentoComponent } from './agendamento/agendamento.component';
     FazerAgendamentoComponent,
     PaginaDaSolicitacaoComponent,
     MeusAgendamentosComponent,
-    AgendamentoComponent
+    AgendamentoComponent,
+    AgendaComponent
   ],
   imports: [
     BrowserModule,
@@ -79,7 +81,7 @@ export class AppModule {
         return 'meusagendamentos';
       }
       else if (this.user == "ong"){
-        return 'comprovante';
+        return 'agenda';
       }else{
         return '';
       }

@@ -67,6 +67,9 @@ a{
 .delete{
     background-color: #CA262C;
 }
+.nome-holder{
+    text-align: center;
+}
 @media screen and (max-width: 430px){
     .hora .input{
         max-width: 100%;

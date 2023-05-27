@@ -1,13 +1,23 @@
+.box{
+    padding: 20px;
+}
 .input{
-
+    
     background: #FFFFFF;
     border: 1px solid #C6C6C6;
     border-radius: 10px;
     /* height: 41px; */
     max-width: 325px;
     width: 100%;
-    border-radius: 10px;
 
+}
+button{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.envia-btn{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .alimentos{
     border-bottom: dashed #C6C6C6 2px;
@@ -20,7 +30,6 @@ p{
     display: flex;
     flex-direction: column;
     padding-bottom: 5%;
-    padding-right: 20px;
 }
 
 label{
@@ -29,14 +38,15 @@ label{
     font-size: 14px;
 }
 
-button{
+.confirma-btn{
     color: #FFFFFF;
     font-size: 17px;
 
     background-color: #8FB021;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
     border: none;
-
+    padding-right:0px;
+    padding-left: 0px;
     max-width: 325px;
     width: 100%;
     border-radius: 10px;
@@ -56,7 +66,9 @@ button{
     color: #000000;
 
 }
-
+.nome-holder{
+    text-align: center;
+}
 .container, img{
     padding-left: 5%;
 }
@@ -78,6 +90,11 @@ img{
 }
 .cad{
     font-weight: bold;
+}
+h1{
+    margin-top: 0px;    
+    margin-bottom: 80px;
+    font-weight: lighter;
 }
 @media (min-width: 1024px){
 
@@ -128,5 +145,16 @@ img{
         text-align: center;
     }
 
-
+}
+@media screen and (max-width:280px){
+    .cat h3{
+        font-size: small;
+    }
+    .cad{
+        font-size: small;
+    }
+    .form-group{
+        
+    padding-right: 20px;
+    }
 }
