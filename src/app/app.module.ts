@@ -24,6 +24,7 @@ import { PaginaDaSolicitacaoComponent } from './pagina-da-solicitacao/pagina-da-
 import { MeusAgendamentosComponent } from './meus-agendamentos/meus-agendamentos.component';
 import { AgendamentoComponent } from './agendamento/agendamento.component';
 import { AgendaComponent } from './agenda/agenda.component';
+import { EditarSolicitacaoComponent } from './editar-solicitacao/editar-solicitacao.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { AgendaComponent } from './agenda/agenda.component';
     PaginaDaSolicitacaoComponent,
     MeusAgendamentosComponent,
     AgendamentoComponent,
-    AgendaComponent
+    AgendaComponent,
+    EditarSolicitacaoComponent
   ],
   imports: [
     BrowserModule,

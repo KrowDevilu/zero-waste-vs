@@ -1,0 +1,64 @@
+.box{
+    padding: 20px;
+}
+
+h3{
+   color: #D99D2A;
+}
+.info-tit{
+    color: black;
+    margin-left: 10px;
+}
+.infos{
+    display: grid;   
+    grid-gap: 5px;
+    padding-bottom: 20px;
+    border-bottom: dashed 2px #C6C6C6;
+}
+.alimento{
+    padding-bottom: 20px;
+    border-bottom: dashed 2px #C6C6C6;
+}
+.ali{
+    display: flex;
+    justify-content: space-between;
+}
+.qtd .input{
+    max-width: 140px;
+}
+.progress-bar{
+    background-color: #a5a5a5;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    text-align: right;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress-bar p{
+    position: absolute;
+    right: 25px;
+    color: white;
+}
+.progress-bar .progress{
+    content: ' ';
+    background-color: #CA262C;
+    width: 100%;
+    border-radius: 50px;
+    height: 20px;
+}
+.envia-btn{
+    justify-content: center;
+}
+.envia-btn img{
+    margin-right: 20px;
+}
+.delete{
+    width: 100%;
+    background-color: #CA262C;
+    text-align: center;
+}
+.delete img{
+    transform: rotate(-45deg);
+}

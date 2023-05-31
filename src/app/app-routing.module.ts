@@ -20,6 +20,7 @@ import { PaginaDaSolicitacaoComponent } from './pagina-da-solicitacao/pagina-da-
 import { MeusAgendamentosComponent } from './meus-agendamentos/meus-agendamentos.component';
 import { AgendamentoComponent } from './agendamento/agendamento.component';
 import { AgendaComponent } from './agenda/agenda.component';
+import { EditarSolicitacaoComponent } from './editar-solicitacao/editar-solicitacao.component';
 
 const routes: Routes = [
   { path: '',   redirectTo: 'login', pathMatch: 'full' },
@@ -43,6 +44,7 @@ const routes: Routes = [
   {path: 'meusagendamentos', component: MeusAgendamentosComponent},
   {path: 'agendamento', component: AgendamentoComponent},
   {path: 'agenda',component: AgendaComponent},
+  {path: 'editar-solicitacao',component: EditarSolicitacaoComponent},
 ];
 
 @NgModule({
